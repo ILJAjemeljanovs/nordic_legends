@@ -31,6 +31,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'redis', '~> 4.0'
+gem 'haml'
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'paperclip'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
+gem 'will_paginate'
+gem 'devise'
+gem 'therubyracer'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -53,6 +63,7 @@ group :development, :test do
   # test coverage and code style
   gem 'simplecov', :require => false
   gem 'rubocop'
+  gem 'pry-rails'
 end
 
 group :development do
