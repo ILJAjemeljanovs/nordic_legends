@@ -48,7 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: nordic_legends_production
-  username: nordic_legends
-  password: <%= ENV['NORDIC_LEGENDS_DATABASE_PASSWORD'] %>
+  # <<: *default
+  # database: nordic_legends_production
+  # username: nordic_legends
+  # password: <%= ENV['NORDIC_LEGENDS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
