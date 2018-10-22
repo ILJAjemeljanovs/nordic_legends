@@ -83,6 +83,8 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    cropper-rails (2.3.2.1)
+      railties (>= 3.1.0)
     devise (4.5.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -192,6 +194,7 @@ GEM
     parallel (1.12.1)
     parser (2.5.1.2)
       ast (~> 2.4.0)
+    popper_js (1.14.3)
     powerpack (0.1.2)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -342,6 +345,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  cropper-rails
   devise
   erb2haml
   factory_girl_rails
@@ -357,6 +361,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-vkontakte
   paperclip
+  popper_js
   pry-rails
   puma (~> 3.11)
   rails (~> 5.2.1)

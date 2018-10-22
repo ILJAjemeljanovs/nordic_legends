@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'popper_js'
 gem 'autoprefixer-rails'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
@@ -29,6 +30,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'jquery-rails'
+gem 'cropper-rails'
 gem 'jquery-ui-rails'
 gem 'redis', '~> 4.0'
 gem 'haml'
