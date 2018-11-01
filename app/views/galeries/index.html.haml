@@ -1,1 +1,11 @@
-%h2 Here will be catalog of images with ability to crop stuff and add them to cards
+%h2 Here you can find a catalog of images with ability to crop stuff and add them to cards
+
+= link_to "New Galery", new_galery_path, class: 'btn btn-primary'
+
+- @galeries.each do |galery|
+  .card{style: "width: 18rem;"}
+    %img.card-img-top{src: '...'}
+    .card-body
+      %h5.card-title= galery.name
+      %p.card-text= galery.description
+      = link_to galery.name, galery_path(galery), class: 'btn btn-primary'

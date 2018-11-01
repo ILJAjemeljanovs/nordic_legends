@@ -1,0 +1,10 @@
+= form_for @galery do |f|
+  %table.table
+    %tr
+      %th= f.label :name, 'Galery name'
+      %td= f.text_field :name
+    %tr
+      %th= f.label :description, 'Galery description'
+      %td= f.text_field :description
+    %tr
+      %td{colspan: 2}= f.submit "Save", class: 'btn btn-primary'

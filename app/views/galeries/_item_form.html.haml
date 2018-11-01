@@ -1,0 +1,9 @@
+.item_form
+  = form_for @item, method: :post do |f|
+    =f.hidden_field :galery_id, value: @galery.id
+    %table.table
+      %tr
+        %th= f.label :url, 'Image url'
+        %td= f.text_area :url
+      %tr
+        %td{colspan: 2}= f.submit "Save", class: 'btn btn-primary'
