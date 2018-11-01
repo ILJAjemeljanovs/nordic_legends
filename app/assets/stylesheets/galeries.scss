@@ -1,0 +1,23 @@
+.item_form {
+  display: none;
+}
+
+.resized_image {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  margin:10px;
+  position: relative;
+  &:hover {
+    max-width: 310px;
+    max-height: 310px;
+    box-shadow: 6px 6px grey;
+    border-radius: 5px;
+  }
+}
+
+.image_table {
+  margin: 30px;
+}

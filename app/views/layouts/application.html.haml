@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title NordicLegends
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = favicon_link_tag asset_path('favicon.jpg')
+  %body
+    %nav.navbar.navbar-inverse.navbar-top
+      = render 'layouts/navbar'
+    .container
+      = yield
