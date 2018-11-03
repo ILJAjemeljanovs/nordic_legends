@@ -1,5 +1,6 @@
 class Galery < ApplicationRecord
   has_many :items
+  validates_presence_of :name, message: "Name should not be blank!"
 end
 
 # == Schema Information

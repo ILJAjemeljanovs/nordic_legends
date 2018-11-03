@@ -4,7 +4,7 @@
 
 - @galeries.each do |galery|
   .card{style: "width: 18rem;"}
-    %img.card-img-top{src: '...'}
+    %img.card-img-top{src: galery.items.first.url || '/images/galery_placeholder.png' }
     .card-body
       %h5.card-title= galery.name
       %p.card-text= galery.description
