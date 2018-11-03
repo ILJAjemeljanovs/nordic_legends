@@ -1,0 +1,12 @@
+.flasher
+  - if flash[:notice]
+    %p.bg-success
+      = flash[:notice]
+
+  - if flash[:warning]
+    %p.bg-warning
+      = flash[:warning]
+
+  - if flash[:error]
+    %p.bg-danger
+      = flash[:error]

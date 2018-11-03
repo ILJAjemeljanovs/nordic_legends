@@ -9,7 +9,7 @@
   - @galery.items.in_groups_of(3) do |group|
     %tr
       - group.compact.each do |item|
-        %td{style: 'margin: 10px'}
+        %td.image_cell
           = link_to edit_item_path(item) do
             %img.resized_image.card-img-top{src: item.url}
 

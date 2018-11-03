@@ -1,7 +1,10 @@
 .item_form {
   display: none;
 }
-
+.card-img-top {
+  width: 18rem;
+  height: 18rem;
+}
 .resized_image {
   height: auto;
   width: auto;
@@ -13,11 +16,15 @@
   &:hover {
     max-width: 310px;
     max-height: 310px;
-    box-shadow: 6px 6px grey;
+    box-shadow: 6px 6px lightgrey;
     border-radius: 5px;
   }
 }
 
 .image_table {
   margin: 30px;
+  .image_cell {
+    width: 350px;
+    height: 350px;
+  }
 }

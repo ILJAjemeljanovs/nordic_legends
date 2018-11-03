@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 
+gem "breadcrumbs_on_rails"
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'popper_js'
 gem 'autoprefixer-rails'
