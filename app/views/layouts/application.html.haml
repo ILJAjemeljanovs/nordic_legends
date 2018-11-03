@@ -12,4 +12,8 @@
     %nav.navbar.navbar-inverse.navbar-top
       = render 'layouts/navbar'
     .container
+      %ol.breadcrumb
+        = render_breadcrumbs tag: :li, separator: ''
+
+      = render 'layouts/flasher'
       = yield

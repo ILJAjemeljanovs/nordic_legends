@@ -4,4 +4,6 @@
       %th= f.label :url, 'Image url'
       %td= f.text_area :url
     %tr
-      %td{colspan: 2}= f.submit "Save", class: 'btn btn-primary'
+      %td{colspan: 2}
+        = f.submit "Save", class: 'btn btn-primary'
+        = link_to 'Back', galery_path(@item.galery_id), class: 'btn btn-primary'

@@ -13,11 +13,15 @@
   &:hover {
     max-width: 310px;
     max-height: 310px;
-    box-shadow: 6px 6px grey;
+    box-shadow: 6px 6px lightgrey;
     border-radius: 5px;
   }
 }
 
 .image_table {
   margin: 30px;
+  .image_cell {
+    width: 350px;
+    height: 350px;
+  }
 }
