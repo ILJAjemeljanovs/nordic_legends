@@ -2,10 +2,14 @@
 
 = link_to "New Galery", new_galery_path, class: 'btn btn-primary'
 
-- @galeries.each do |galery|
-  .card{style: "width: 18rem;"}
-    %img.card-img-top{src: galery.items&.first&.url || '/images/galery_placeholder.png' }
-    .card-body
-      %h5.card-title= galery.name
-      %p.card-text= galery.description
-      = link_to galery.name, galery_path(galery), class: 'btn btn-primary'
+%table.table
+  - @galeries.in_groups_of(3).each do |group|
+    %tr
+      - group.compact.each do |galery|
+        %td
+          .card{style: "width: 18rem;"}
+            %img.card-img-top{src: galery.items&.first&.url || '/images/galery_placeholder.png' }
+            .card-body
+              %h5.card-title= galery.name
+              %p.card-text= galery.description
+              = link_to "Show", galery_path(galery), class: 'btn btn-primary'
